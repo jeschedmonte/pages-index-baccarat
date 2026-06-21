@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百家乐 · 简明指南与访问提醒</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f6f3;
+            color: #1e1e1e;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', Helvetica, Arial, sans-serif;
+            line-height: 1.65;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .page {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem 4rem;
+        }
+
+        /* hero */
+        .hero {
+            text-align: center;
+            padding: 3rem 0 2.2rem;
+            border-bottom: 1px solid #e2dfd8;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: #261f1a;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.05rem;
+            color: #5a534d;
+            max-width: 540px;
+            margin: 0 auto;
+        }
+
+        /* 通用章节 */
+        section {
+            padding: 2.5rem 0;
+            border-bottom: 1px solid #e9e6e0;
+        }
+
+        section:last-of-type {
+            border-bottom: none;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: #2b241f;
+            margin-bottom: 1.25rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #3b332d;
+            margin-bottom: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #3f3832;
+        }
+
+        a {
+            color: #2266aa;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.15s ease;
+        }
+
+        a:hover {
+            border-bottom-color: #2266aa;
+        }
+
+        /* 优势区卡片网格 */
+        .advantage-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .advantage-card {
+            background: #ffffffec;
+            padding: 1.4rem 1.2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+            border: 1px solid #e7e2da;
+        }
+
+        .advantage-card h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: #2f2822;
+        }
+
+        .advantage-card p {
+            font-size: 0.95rem;
+            color: #55504a;
+        }
+
+        /* 说明区 / 简明指南 */
+        .guide-note {
+            background-color: #ffffffec;
+            padding: 1.6rem 1.8rem;
+            border-radius: 12px;
+            border: 1px solid #e2dbd2;
+            margin: 1.2rem 0 0.5rem;
+        }
+
+        .guide-note ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .guide-note li {
+            padding: 0.35rem 0 0.35rem 1.8rem;
+            position: relative;
+            color: #3f3832;
+        }
+
+        .guide-note li::before {
+            content: "·";
+            position: absolute;
+            left: 0.3rem;
+            color: #9a8a7a;
+            font-weight: bold;
+        }
+
+        /* FAQ 摘要 */
+        .faq-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid #edebe6;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 500;
+            font-size: 1rem;
+            color: #2f2822;
+            margin-bottom: 0.25rem;
+        }
+
+        .faq-answer {
+            font-size: 0.95rem;
+            color: #5b544c;
+        }
+
+        /* 底部链接 */
+        .bottom-links {
+            margin-top: 2rem;
+            padding-top: 1.8rem;
+            border-top: 1px solid #e2dfd8;
+            font-size: 0.9rem;
+            color: #6b6259;
+            text-align: center;
+        }
+
+        .bottom-links a {
+            color: #4d443b;
+            border-bottom: 1px solid #cbc3b8;
+        }
+
+        .bottom-links a:hover {
+            border-bottom-color: #4d443b;
+        }
+
+        .bottom-links span {
+            margin: 0 0.6rem;
+            color: #bfb6ab;
+        }
+
+        /* 响应式 */
+        @media (max-width: 600px) {
+            .page {
+                padding: 1.5rem 1rem 3rem;
+            }
+
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+
+            .advantage-grid {
+                grid-template-columns: 1fr;
+                gap: 0.9rem;
+            }
+
+            .guide-note {
+                padding: 1.2rem 1.2rem;
+            }
+
+            section {
+                padding: 1.8rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!-- hero -->
+    <div class="hero">
+        <h1>关于<em style="font-style: normal; color: #3d322c;">百家乐</em></h1>
+        <p>一份简明指南与访问提醒，帮助你更清晰地了解这项经典牌戏的规则与玩法脉络。</p>
+    </div>
+
+    <!-- 优势区 -->
+    <section>
+        <h2>规则简明 · 节奏清晰</h2>
+        <div class="advantage-grid">
+            <div class="advantage-card">
+                <h3>易懂的比牌逻辑</h3>
+                <p>比较闲家与庄家手牌点数，无需复杂决策，接近直觉判断。</p>
+            </div>
+            <div class="advantage-card">
+                <h3>三种主要下注选择</h3>
+                <p>闲、庄、和，每种对应不同赔率与风险特征，结构一目了然。</p>
+            </div>
+            <div class="advantage-card">
+                <h3>低参与门槛</h3>
+                <p>不要求记忆大量策略，新手也能快速进入状态，适合轻松体验。</p>
+            </div>
+            <div class="advantage-card">
+                <h3>清晰的回合流程</h3>
+                <p>发牌、补牌、判定胜负，每一步都有明确规则，没有模糊地带。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 说明区：简明指南 -->
+    <section>
+        <h2>从点数到补牌 · 简明指南</h2>
+        <div class="guide-note">
+            <p>百家乐的核心围绕点数计算：A 为 1 点，2–9 按面值，10 与花牌计为 0。每手牌最多三张，总和的个位数即为最终点数。补牌规则由牌面自动触发，无需玩家记忆——庄家与闲家的补牌条件固定且透明。</p>
+            <p>了解基础逻辑后，实际对局中只需关注下注选项与赔率结构。建议提前确认平台规则说明，部分细节可能因版本略有差异。</p>
+            <ul>
+                <li>先熟悉点数计算方式，理解「天牌」概念（前两张8或9直接定胜负）</li>
+                <li>注意庄家补牌规则略微复杂，但由荷官执行，无需玩家计算</li>
+                <li>下注前观察赔率表格，尤其「和」出现概率低但赔率高</li>
+            </ul>
+        </div>
+        <p style="margin-top: 1.2rem; font-size: 0.95rem;">想进一步了解规则细节？可以随时参考 <a href="https://index--baccarat.com">百家乐</a> 页面上的说明与动态。</p>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section>
+        <h2>常见疑问 · 摘要</h2>
+        <div class="faq-item">
+            <div class="faq-question">百家乐和二十一点有什么区别？</div>
+            <div class="faq-answer">两者都是比点数，但二十一点玩家需自行决策是否要牌，且庄家规则不同；百家乐补牌由规则自动执行，玩家只进行下注。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">新手适合先玩闲家还是庄家？</div>
+            <div class="faq-answer">从概率看，庄家略占优势但需支付佣金；闲家赔率简单无佣金。两者都适合入门，可小额尝试感受节奏。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">「和」值得下注吗？</div>
+            <div class="faq-answer">赔率高但出现概率低（约9.5%），适合偶尔小注，不宜作为主要策略。</div>
+        </div>
+    </section>
+
+    <!-- 访问提醒 -->
+    <section style="border-bottom: none;">
+        <h2>访问提醒</h2>
+        <p>在接触任何线上版本前，建议先确认网站规则是否清晰、是否提供完整的赔率说明和游戏指南。保持理性参与，将百家乐视为一种娱乐方式更为妥当。</p>
+        <p style="margin-bottom: 0.3rem;">关于规则演变或特定版本细节，可查阅 <a href="https://index--baccarat.com">百家乐</a> 参考信息，页面内容会随版本更新保持同步。</p>
+    </section>
+
+    <!-- 底部链接 -->
+    <div class="bottom-links">
+        <a href="https://index--baccarat.com">百家乐</a>
+        <span>·</span>
+        <span style="color: #8b8176;">简明指南</span>
+        <span>·</span>
+        <span style="color: #8b8176;">版本提醒</span>
+    </div>
+</div>
+</body>
+</html>
